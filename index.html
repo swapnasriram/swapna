@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>swapna </title>
+</head>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX designer</p>
+            <h1>Hi,I'm <span>swapna</span> <br>from bangalore</h1>
+        </div>
+    </div>
+</div>
+<!-------------------about--------------------->
+ <div id="ABOUT">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"></div>
+            <img src="img/bg img.png">
+        </div>
+            <div class="about-col-2"></div>
+            <h1 class="sub-title">about me</h1>
+            <p>myself swapna, my schooling was in bangalore and
+                 my inter was in my native,my graduation was in bca</p>
+
+
+                 <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                <p class="tab-links active-link" onclick="opentab('experience')">experience</p>
+                <p class="tab-links active-link" onclick="opentab('skills')">education</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI?UX</span><br>designer web/app interfaces</li>
+                        <li><span>web devlopment</span><br>web app devlopment</li>
+                        <li><span>app devlopment</span><br>buildind android/ios apps</li>
+                    </ul> 
+                 </div>
+                 <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021-current</span><br>ui/ux design training at ET institute</li>
+                        <li><span>2019 - 2021</span><br> team lead at starapp LLc.</li>
+                        <li><span>2017 - 2019</span><br>ui/ux design executive at coin digital ltd.</li>
+                        <li><span>2016 - 2017</span><br>intership at ekart ecommerce.</li>
+                    </ul> 
+                 </div>
+                 <div class="tab-contents "id="education">
+                    <ul>
+                        <li><span>2016</span><br>ui/ux design training at ET institute</li>
+                        <li><span>2016</span><br>MBA from MIT bangalore</li>
+                        <li><span>2014</span><br>MBA from MIT bangalore</li>
+                    </ul> 
+                 </div>
+          </div>
+    </div>
+ </div>
+<!-----------------------services---------------->
+</div>
+<div id="services">
+   <div class="container">
+       <h1 class="sub-title"> My Services</h1>
+       <div class="services-list"></div>
+       <div>
+           <h2> Web Design </h2>
+           <p>To be a good web designer, you need to master the craft of enhancing user experience (UX) and user interface (UI).<br> You need to learn how to use colour psychology, grid systems, and web fonts to design websites that are visually appealing and which are responsive to all kinds of devices.</p>
+           <a href="#">learn more</a>
+       </div>
+       <div>
+           <h2> UI/UX Design</h2>
+           <p>To be a good web designer, you need to master the craft of enhancing user experience (UX) and user interface (UI).<br> You need to learn how to use colour psychology, grid systems, and web fonts to design websites that are visually appealing and which are responsive to all kinds of devices.</p>
+           <a href="#">learn more</a>
+       </div>
+       <div>
+           <h2>  App Design </h2>
+           <p>To be a good web designer, you need to master the craft of enhancing user experience (UX) and user interface (UI).<br> You need to learn how to use colour psychology, grid systems, and web fonts to design websites that are visually appealing and which are responsive to all kinds of devices.</p>
+           <a href="#">learn more</a>
+       </div>
+   </div>
+</div>
+<script>
+   var tablinks=documents.getelementsbyclassname("tab-links")
+   var tablinks=documents.getelementsbyclassname("tab-contents")
+
+   function opentab(tabname){
+       for(tablink of tablink){
+           tablink.classlist.remove("active-link");
+       }
+       for(tabcontent of tabcontents){
+           tabcontents.classlist.remove("active-tab");
+       }
+       event.currenttarget.classlist.add("active-link");
+       document.getelementarybyid(tabname).classlist.add("active-tab");
+   }
+</script>
+</div>
+</html>
